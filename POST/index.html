@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <head>
+       
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+      </head>
+      
+</head>
+
+<body class="bg-[#0f172a] text-white flex items-center justify-center min-h-screen font-sans">
+    <!--Start-->
+    <div class="w-full max-w-md p-8 space-y-6 bg-[#1e293b] rounded-xl shadow-lg">
+        <div class="text-center">
+            <h1 class="text-3xl font-bold mb-2">Create Account</h1>
+            <p class="text-gray-400 text-sm">Join Our Community Today</p>
+        </div>
+
+        <form class="space-y-5" action="#" method="POST" id="loginForm">
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-300">Enter Your Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" 
+                    class="mt-1 w-full px-4 py-2 rounded-md bg-[#334155] text-white border border-[#475569] focus:ring-2 focus:ring-blue-500 focus:outline-none">
+            </div>
+
+            <div>
+                <label for="password" class="block text-sm font-medium text-gray-300">Enter Your Password</label>
+                <input id="password" name="password" type="password" autocomplete="current-password" 
+                    class="mt-1 w-full px-4 py-2 rounded-md bg-[#334155] text-white border border-[#475569] focus:ring-2 focus:ring-blue-500 focus:outline-none">
+            </div>
+
+            <div class="flex items-center justify-between">
+                <label class="flex items-center text-sm">
+                    <input type="checkbox" class="mr-2 rounded bg-[#334155] border-gray-600 text-blue-600">
+                    Remember me
+                </label>
+                <a href="#" class="text-sm text-blue-400 hover:underline">Forgot password?</a>
+            </div>
+<!--buttons-->
+            <button type="submit"
+                class="w-full py-2 px-4 bg-blue-600 hover:bg-blue-700 rounded-md font-semibold transition text-white" id="signupBtn">
+                Sign Up
+            </button>
+             <!-- Continue with Google Button -->
+      <button
+      class="w-full flex items-center justify-center gap-3 py-2 px-4 bg-white text-black rounded-md hover:bg-gray-100 transition">
+      <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" class="w-5 h-5" />
+      <span class="font-medium" id="loginWithGoogle">Continue with Google</span>
+    </button>
+        </form>
+
+        <p class="text-sm text-center text-gray-400">
+            Already have an account?
+            <a href="/signin.html" class="text-blue-400 hover:underline" id="loginBtn">Sign In</a>
+        </p>
+    </div>
+    <!--script-->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
